@@ -6,6 +6,7 @@
   "description": "回合制自动战斗 sim — 决定论核心 + golden-trace 自证工作流",
   "scripts": {
     "verify": "tsc --noEmit && tsx scripts/check-schema.ts && vitest run && biome check .",
+    "battle": "tsx scripts/battle.ts",
     "test": "vitest run",
     "check-schema": "tsx scripts/check-schema.ts",
     "golden:update": "cross-env UPDATE_GOLDEN=1 vitest run tests/golden.test.ts"
