@@ -1,0 +1,255 @@
+{
+  "seed": 12345,
+  "winner": "A",
+  "reason": "wipe",
+  "turns": 11,
+  "excludedEventFields": [],
+  "excludedUnitFields": [],
+  "eventDigest": "8c0df593",
+  "stateDigest": "ea68d882",
+  "events": [
+    {
+      "av": 76,
+      "name": "游侠",
+      "slotIndex": 1,
+      "type": "act"
+    },
+    {
+      "amount": 15,
+      "hpAfter": 29,
+      "srcSlot": 1,
+      "tgtSlot": 2,
+      "type": "damage"
+    },
+    {
+      "av": 86,
+      "name": "毒手",
+      "slotIndex": 2,
+      "type": "act"
+    },
+    {
+      "duration": 3,
+      "power": 5,
+      "srcSlot": 2,
+      "tgtSlot": 0,
+      "type": "dot_apply"
+    },
+    {
+      "av": 100,
+      "name": "队长",
+      "slotIndex": 3,
+      "type": "act"
+    },
+    {
+      "amount": 6,
+      "duration": 2,
+      "srcSlot": 3,
+      "stat": "atk",
+      "tgtSlot": 3,
+      "type": "buff_apply"
+    },
+    {
+      "amount": 16,
+      "hpAfter": 44,
+      "srcSlot": 3,
+      "tgtSlot": 0,
+      "type": "damage"
+    },
+    {
+      "amount": 5,
+      "hpAfter": 39,
+      "slotIndex": 0,
+      "type": "dot_tick"
+    },
+    {
+      "av": 111,
+      "name": "铁卫",
+      "slotIndex": 0,
+      "type": "act"
+    },
+    {
+      "amount": 16,
+      "hpAfter": 13,
+      "srcSlot": 0,
+      "tgtSlot": 2,
+      "type": "damage"
+    },
+    {
+      "av": 76,
+      "name": "游侠",
+      "slotIndex": 1,
+      "type": "act"
+    },
+    {
+      "amount": 15,
+      "hpAfter": -2,
+      "srcSlot": 1,
+      "tgtSlot": 2,
+      "type": "damage"
+    },
+    {
+      "name": "毒手",
+      "slotIndex": 2,
+      "type": "death"
+    },
+    {
+      "av": 100,
+      "name": "队长",
+      "slotIndex": 3,
+      "type": "act"
+    },
+    {
+      "amount": 6,
+      "duration": 2,
+      "srcSlot": 3,
+      "stat": "atk",
+      "tgtSlot": 3,
+      "type": "buff_apply"
+    },
+    {
+      "amount": 22,
+      "hpAfter": 17,
+      "srcSlot": 3,
+      "tgtSlot": 0,
+      "type": "damage"
+    },
+    {
+      "amount": 5,
+      "hpAfter": 12,
+      "slotIndex": 0,
+      "type": "dot_tick"
+    },
+    {
+      "av": 111,
+      "name": "铁卫",
+      "slotIndex": 0,
+      "type": "act"
+    },
+    {
+      "amount": 16,
+      "hpAfter": 32,
+      "srcSlot": 0,
+      "tgtSlot": 3,
+      "type": "damage"
+    },
+    {
+      "av": 76,
+      "name": "游侠",
+      "slotIndex": 1,
+      "type": "act"
+    },
+    {
+      "amount": 15,
+      "hpAfter": 17,
+      "srcSlot": 1,
+      "tgtSlot": 3,
+      "type": "damage"
+    },
+    {
+      "kind": "buff",
+      "slotIndex": 3,
+      "type": "status_expire"
+    },
+    {
+      "av": 100,
+      "name": "队长",
+      "slotIndex": 3,
+      "type": "act"
+    },
+    {
+      "amount": 6,
+      "duration": 2,
+      "srcSlot": 3,
+      "stat": "atk",
+      "tgtSlot": 3,
+      "type": "buff_apply"
+    },
+    {
+      "amount": 22,
+      "hpAfter": -10,
+      "srcSlot": 3,
+      "tgtSlot": 0,
+      "type": "damage"
+    },
+    {
+      "name": "铁卫",
+      "slotIndex": 0,
+      "type": "death"
+    },
+    {
+      "av": 76,
+      "name": "游侠",
+      "slotIndex": 1,
+      "type": "act"
+    },
+    {
+      "amount": 15,
+      "hpAfter": 2,
+      "srcSlot": 1,
+      "tgtSlot": 3,
+      "type": "damage"
+    },
+    {
+      "av": 76,
+      "name": "游侠",
+      "slotIndex": 1,
+      "type": "act"
+    },
+    {
+      "amount": 15,
+      "hpAfter": -13,
+      "srcSlot": 1,
+      "tgtSlot": 3,
+      "type": "damage"
+    },
+    {
+      "name": "队长",
+      "slotIndex": 3,
+      "type": "death"
+    },
+    {
+      "reason": "wipe",
+      "turns": 11,
+      "type": "battle_end",
+      "winner": "A"
+    }
+  ],
+  "finalUnits": [
+    {
+      "alive": false,
+      "atk": 6,
+      "defId": "a_tank",
+      "hp": 0,
+      "slotIndex": 0,
+      "speed": 90,
+      "team": "A"
+    },
+    {
+      "alive": true,
+      "atk": 7,
+      "defId": "a_ranger",
+      "hp": 34,
+      "slotIndex": 1,
+      "speed": 130,
+      "team": "A"
+    },
+    {
+      "alive": false,
+      "atk": 5,
+      "defId": "b_venom",
+      "hp": 0,
+      "slotIndex": 2,
+      "speed": 115,
+      "team": "B"
+    },
+    {
+      "alive": false,
+      "atk": 18,
+      "defId": "b_captain",
+      "hp": 0,
+      "slotIndex": 3,
+      "speed": 100,
+      "team": "B"
+    }
+  ]
+}
