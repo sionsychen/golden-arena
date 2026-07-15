@@ -1,0 +1,24 @@
+{
+  "name": "battle-sim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "回合制自动战斗 sim — 决定论核心 + golden-trace 自证工作流",
+  "scripts": {
+    "verify": "tsc --noEmit && tsx scripts/check-schema.ts && vitest run && biome check .",
+    "test": "vitest run",
+    "check-schema": "tsx scripts/check-schema.ts",
+    "golden:update": "cross-env UPDATE_GOLDEN=1 vitest run tests/golden.test.ts"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.4",
+    "@types/node": "^22.0.0",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
