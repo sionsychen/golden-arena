@@ -87,7 +87,13 @@
 11. **sim 一等输出 = 结果 + 结构化事件流**。
     边跑边 emit `{type:'act',unit,av}`、`{type:'damage',src,tgt,amount,hpAfter}`、`{type:'death',unit}`...
     - **事件必须是结构化对象,不是拼好的字符串。** 才能被 digest/机械校验/i18n/多投影层消费。
-    - 事件流 = 将来文本战报 / Godot 渲染的数据源(sim 产状态,投影层消费,同 WoCC/yume 架构)。
+    - 事件流 = 将来文本战报 / three.js 渲染的数据源(sim 产状态,投影层消费,同 WoCC/yume 架构)。
+    - **投影层选 three.js(TS),不用 Godot。** 理由锚定元目标"verify 覆盖到哪 AI 自主就到哪"(决定13):
+      sim 已是 TS,three.js 也是 TS → 投影层与 sim **同仓、同一套 `npm run verify`(tsc/vitest/biome)**;
+      Godot 的 GDScript/C# 是另一套工具链,会把 verify 这条线切断在语言边界,AI 对投影层的自主开发能力就断在那。
+      且决定2 是"无位置纯队列",投影需求轻(演出事件流:伤害数字/血条/行动高亮/死亡),用不上 Godot 的编辑器/物理/场景重量。
+      直接对标 WoCC(sim TS + three.js 的 AI 协作成功案例)。代价:自己搭场景图/渲染管线、无可视化编辑器——对轻投影不算痛点。
+    - **[DEFER]** 投影层本身仍推迟,现在不搭;这里只钉死"将来用 three.js"的决策。
 
 ---
 

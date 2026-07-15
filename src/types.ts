@@ -67,7 +67,7 @@ export interface Unit {
 
 /**
  * 结构化事件(决定11)。必须是对象不是拼好的字符串,才能被 digest/校验/i18n/多投影层消费。
- * 事件流 = 将来文本战报 / Godot 渲染的数据源。
+ * 事件流 = 将来文本战报 / three.js 渲染的数据源。
  */
 export type BattleEvent =
   | { type: "act"; slotIndex: number; name: string; av: number }

@@ -37,7 +37,7 @@ verify 覆盖到哪,AI 的自主就到哪;它漏掉的(如数值平衡)才留给
    不是"破例写代码"。
 
 5. **事件必须是结构化对象,不是拼好的字符串。** 见 `src/types.ts` 的 `BattleEvent`。
-   事件流是将来文本战报 / Godot 渲染的数据源,必须可被 digest / 机械校验 / i18n 消费。
+   事件流是将来文本战报 / three.js 渲染的数据源,必须可被 digest / 机械校验 / i18n 消费。
 
 6. **golden 红了,先假设是代码错,不是 golden 该更新。** 见 `tests/golden.test.ts`。
    改代码别改 harness:别放宽精度、别删采样字段、别为了过而重生 golden。
